@@ -17,3 +17,40 @@ for (var value of myArray){
 	console.log(value);
 }
 
+// 类
+class Animal {
+    constructor(){
+        this.type = 'animal'
+    }
+    says(say){
+        console.log(this.type + ' says ' + say)
+        // setTimeout( () => {
+        //     console.log(this.type + ' says ' + say)
+        // }, 1000)
+    }
+}
+
+let animal = new Animal()
+animal.says('hello') //animal says hello
+
+// 继承类
+class Cat extends Animal {
+    constructor(){
+        super()
+        this.type = 'cat'
+    }
+}
+
+let cat = new Cat()
+cat.says('hello') //cat says hello
+
+
+function a(i){return i+1} //普通函数
+(i)=>i+1;// 箭头函数
+
+
+// 字符串模板
+let va = "cat ";
+let temp = `hello ${va}`;
+console.log(temp)
+
