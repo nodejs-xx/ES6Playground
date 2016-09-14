@@ -54,3 +54,9 @@ let va = "cat ";
 let temp = `hello ${va}`;
 console.log(temp)
 
+// 解构
+let ca = 'ken'
+let dog = 'lili'
+let zoo = {ca, dog}
+console.log(zoo)  //Object {cat: "ken", dog: "lili"}
+
